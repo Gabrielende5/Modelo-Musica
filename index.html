@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <title>Modelo-Spotify</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <!-- Biblioteca para usar icones -->
+</head>
+<body>
+    <div class="player">
+        <div class="logo">
+            <i class="bx bx-music"></i>
+        </div>
+    
+    <span id="musicName"></span>
+
+    <audio id="player" src=""></audio>
+        <!-- Onde ficará a musica atual -->
+    <div class="controls">
+        <button id="prevButton"><i class='bx bx-skip-previous'></i></button>
+            <!-- Botão para voltar -->
+        <button id="playPauseButton"><i class='bx bx-caret-right'></i></button>
+            <!-- Botão de play e pause -->
+        <button id="nextButton"><i class='bx bx-skip-next'></i></button>
+            <!-- Botão para ir para a proxima musica -->
+      </div>
+      <div class="footer">
+        <div class="progress-bar">
+            <div class="progress">
+
+            </div>
+        </div>
+        <div class="time"> <!-- Tempo das musicas, esse sendo iniciado com zero -->
+            <span id="currentTime">0:00</span>
+            <span id="duration">0:00</span>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="script.js"></script>
+      <!-- Do tipo "module" pois vai importar uma biblioteca do tipo array (armazena uma coleção de elementos do mesmo tipo em uma sequência contínua de memória) de musicas -->
+</body>
+</html>
